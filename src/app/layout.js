@@ -1,5 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import { TopbarMenu } from "@/components/ui/topbar-menu";
+
+const inter = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+}); 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,10 +26,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="pt-BR"
+      className={cn(inter.variable, geistSans.variable, geistMono.variable, "bg-white text-black")}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+
+      <body className=" w-260 m-auto">
+        <TopbarMenu />
+        {children}
+      </body>
     </html>
   );
 }
