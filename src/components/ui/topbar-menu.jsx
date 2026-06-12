@@ -10,6 +10,7 @@ export function TopbarMenu() {
              <div className="flex gap-6 text-sm">
                 <Link href="/best">Melhores</Link>
                 <Link href="/support">Suporte</Link>
+                <Link href="/dashboard">Dashboard</Link>
              </div>
              <div className="flex gap-7.5">
                 <Link href="/login"><Button variant="outline">Login</Button></Link>
