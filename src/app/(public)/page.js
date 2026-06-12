@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="bg-yellow-50 min-h-screen">
 
-      <section className="text-center py-16 bg-gradient-to-r from-yellow-200 to-orange-300"
+      <section className="text-center py-16 bg-linear-to-r from-yellow-200 to-orange-300"
 >
         <h1 className="text-4xl font-bold mb-4">
           🍿 Bem-vindo ao RottenPotatoes
