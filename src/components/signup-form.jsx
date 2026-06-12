@@ -9,6 +9,7 @@ import {
   FieldSeparator,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import Image from "next/image"
 
 export function SignupForm({
   className,
@@ -87,11 +88,14 @@ export function SignupForm({
               </FieldDescription>
             </FieldGroup>
           </form>
-          <div className="relative hidden bg-muted md:block">
-            <img
+          <div className="relative hidden bg-muted md:block md:h-80">
+            <Image
               src="/Cadastre-se com diversão e snacks!.png"
               alt="Image"
-              className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale" />
+              fill
+              sizes="(min-width:1024px) 33vw, (min-width:768px) 50vw, 100vw"
+              className="object-cover dark:brightness-[0.2] dark:grayscale"
+            />
           </div>
         </CardContent>
       </Card>

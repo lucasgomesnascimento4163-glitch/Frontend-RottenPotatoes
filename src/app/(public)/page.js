@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="bg-yellow-50 min-h-screen">
@@ -27,11 +29,15 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* FILME 1 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <img
-              src="/R.png"
-              alt="Filme 1"
-              className="w-full h-48 object-cover"
-            />
+            <div className="relative w-full h-48 md:h-56 lg:h-64">
+              <Image
+                src="/R.png"
+                alt="Filme 1"
+                fill
+                sizes="(min-width:1024px) 25vw, (min-width:768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4">
               <h3 className="font-semibold text-lg mb-2">O Poderoso Chefão</h3>
               <div className="flex items-center gap-2 mb-2">
@@ -44,11 +50,16 @@ export default function Home() {
 
           {/* SÉRIE 1 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <img
-              src="/breaking-bad.png"
-              alt="Série 1"
-              className="w-full h-48 object-cover"
-            />
+            <div className="relative w-full h-48 md:h-56 lg:h-64">
+              <Image
+                src="/breaking-bad.png"
+                alt="Série 1"
+                fill
+                loading="eager"
+                sizes="(min-width:1024px) 25vw, (min-width:768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4">
               <h3 className="font-semibold text-lg mb-2">Breaking Bad</h3>
               <div className="flex items-center gap-2 mb-2">
@@ -61,11 +72,15 @@ export default function Home() {
 
           {/* ANIME 1 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <img
-              src="/R.jpg"
-              alt="Anime 1"
-              className="w-full h-48 object-cover"
-            />
+            <div className="relative w-full h-48 md:h-56 lg:h-64">
+              <Image
+                src="/R.jpg"
+                alt="Anime 1"
+                fill
+                sizes="(min-width:1024px) 25vw, (min-width:768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4">
               <h3 className="font-semibold text-lg mb-2">Attack on Titan</h3>
               <div className="flex items-center gap-2 mb-2">
@@ -78,11 +93,15 @@ export default function Home() {
 
           {/* FILME 2 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-            <img
-              src="/wp9255971.jpg"
-              alt="Filme 2"
-              className="w-full h-48 object-cover"
-            />
+            <div className="relative w-full h-48 md:h-56 lg:h-64">
+              <Image
+                src="/wp9255971.jpg"
+                alt="Filme 2"
+                fill
+                sizes="(min-width:1024px) 25vw, (min-width:768px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="p-4">
               <h3 className="font-semibold text-lg mb-2">Interestelar</h3>
               <div className="flex items-center gap-2 mb-2">
